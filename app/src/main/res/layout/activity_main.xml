@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <hk.meiyan.com.admissionanimation.GuideViewPager
+        android:id="@+id/vp_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/btn_experience"
+        android:layout_width="135dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/bg_white_transparent"
+        android:text="开始旅程"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_experience"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:id="@+id/ll_guide_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"></LinearLayout>
+
+        <View
+            android:id="@+id/view_red_point"
+            android:layout_width="18dp"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_indicator_selected_oval" />
+    </RelativeLayout>
+
+</RelativeLayout>
